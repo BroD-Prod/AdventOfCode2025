@@ -20,12 +20,12 @@ int main(){
                 if(direction == 'R'){
                     startingNum += value;
                     if(startingNum > 100){
-                        startingNum = 0;
+                        startingNum %= 100;
                     }
                 } else if(direction == 'L'){
                     startingNum -= value;
                     if(startingNum < 0){
-                        startingNum = 0;
+                        startingNum %= 100;
                 }
             if(startingNum == 0){
                 roationsToZero++;
